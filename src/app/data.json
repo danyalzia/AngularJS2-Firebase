@@ -1,0 +1,12 @@
+[
+  {
+    "employeeName": "Richard",
+    "daysWork": "15 Days",
+    "hourlyRate": "$11.11"
+  },
+  {
+    "employeeName": "John",
+    "daysWork": "30 Days",
+    "hourlyRate": "$20.88"
+  }
+]

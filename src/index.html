@@ -7,8 +7,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
   <app-root>Loading...</app-root>
+  
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+		apiKey: "AIzaSyDkzj0QeJc1n68FX-f167w7GL2NhpuZ96Y",
+		authDomain: "my-awesome-app-3b0f5.firebaseapp.com",
+		databaseURL: "https://my-awesome-app-3b0f5.firebaseio.com",
+		storageBucket: "my-awesome-app-3b0f5.appspot.com",
+		messagingSenderId: "196445321886"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>

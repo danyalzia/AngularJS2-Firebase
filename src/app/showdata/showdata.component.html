@@ -1,0 +1,51 @@
+<div class="container" id="colorbody">
+    <div class="page-header">
+      <h1>
+        <span>Employee List</span>
+      </h1>
+    </div>
+
+    <div class="panel panel-default" style="width: 35%">
+      <div class="panel-heading">User information</div>
+
+      <table class="table table-striped" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="10" style="width: 10%">
+        <thead>
+        <tr>
+          <th style="width: 10%"></th>
+
+          <th style="width: 20%">
+              <mfDefaultSorter by="name">Employee Name</mfDefaultSorter>
+          </th>
+          <th style="width: 40%">
+            <mfDefaultSorter by="email">Days Work</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+            <mfDefaultSorter by="age">Hourly Rate</mfDefaultSorter>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of mf.data">
+          <td>
+          </td>
+
+          <td>{{item.employeeName}}</td>
+          <td>{{item.daysWork}}</td>
+          <td class="text-right">{{item.hourlyRate}}</td>
+
+          <td>
+          </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td colspan="5">
+            <mfBootstrapPaginator [rowsOnPageSet]="[5,10,15]"></mfBootstrapPaginator>
+          </td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+
+
+</div>
